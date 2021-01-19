@@ -55,16 +55,18 @@ h2 {
 }
 
 .hero {
-  height: 30rem;
+  height: 100%;
   background-color: var(--background-gris);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
+  justify-content: center;
+  
 }
 
 .hero-image{
   object-fit: cover;
+  /* width: 100%; */
+  padding: 2rem;
 }
 
 
@@ -83,6 +85,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .project-course,
 .project-date,
@@ -115,7 +118,7 @@ h2 {
   background-color: var(--background-gris);
   color: white;
   display: flex;
-  height: 7rem;
+  height: 100%;
   align-items: center;
   justify-content: space-between;
 }
@@ -187,6 +190,8 @@ figure {
 .event-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 .event-list-title {
   margin-left: 20px;
@@ -231,6 +236,7 @@ figure {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .social {
@@ -286,11 +292,11 @@ figure {
 
 .container {
   /* border: 1px solid red; */
-  width: 100rem;
+  width: 90%;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
   height: inherit;
-  flex-wrap: inherit;
+  flex-wrap: wrap;
 }
