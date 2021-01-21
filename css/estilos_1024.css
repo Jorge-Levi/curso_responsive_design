@@ -1,4 +1,17 @@
+.header {
+    font-size: 16.8px;
+}
+
 .hero {
     align-items: center;
     justify-content: space-between;
+    font-size: 16.8;
+}
+
+.project {
+    font-size: 16.8px;
+}
+
+.event {
+    font-size: 16.8px;
 }
