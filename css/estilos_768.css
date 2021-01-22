@@ -84,3 +84,19 @@
     /* padding: 1rem 3rem; */
     display: inline;
   }
+
+  .footer>.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer .description{
+    text-align: end;
+    width: auto;
+  }
+  
+  .copyright{
+    width: auto;
+    text-align: end;
+  }

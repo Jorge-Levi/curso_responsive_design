@@ -193,6 +193,7 @@ figure {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
 }
 
 .footer img {
@@ -202,6 +203,17 @@ figure {
 .footer a {
   color: white;
 }
+
+.footer .description{
+  text-align: center;
+  width: 100%;
+}
+
+.copyright{
+  width: 100%;
+  text-align: center;
+}
+
 
 .event-list {
   display: flex;
