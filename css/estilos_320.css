@@ -6,6 +6,10 @@
     font-size: 16.2px;
 }
 
+.hero .container {
+    width: 100%;
+}
+
 .project {
     font-size: 16.2px;
 }
@@ -13,3 +17,4 @@
 .event{
     font-size: 16.2px;
 }
+

@@ -3,7 +3,6 @@
     width: auto;
   }
 
-
   .header {
     font-size: 16.6px;
   }
@@ -32,12 +31,25 @@
     font-size: 16.6px;
   }
 
-  .hero__titulo {
+  .hero .container {
+    width: 90%;
+  }
+
+  .hero__titulo{
     width: 50%;
+    background-color: transparent;
   }
 
   .hero-inmage__container {
+    position: static;
     width: 45%;
+  }
+
+  .hero-image {
+    object-fit: cover;
+    /* width: 50%; */
+    height: auto;
+    /* padding: 2rem; */
   }
 
   .project {
@@ -91,12 +103,12 @@
     align-items: center;
   }
 
-  .footer .description{
+  .footer .description {
     text-align: end;
     width: auto;
   }
-  
-  .copyright{
+
+  .copyright {
     width: auto;
     text-align: end;
   }

@@ -1,14 +1,18 @@
-:root{
-  --gris-oscuro:#1d252c;
-  --gris-claro:#626262;
-  --background-gris:#1b2127;
-  --celeste:#026fff;
+:root {
+  --gris-oscuro: #1d252c;
+  --gris-claro: #626262;
+  --background-gris: #1b2127;
+  --celeste: #026fff;
 }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -17,12 +21,12 @@ body {
   font-size: 1.6rem;
 }
 
-h1, 
+h1,
 h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   font-family: 'Fjalla One', sans-serif;
   font-weight: normal;
   /* font-style: italic; */
@@ -32,7 +36,7 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   font-size: 1.5em;
 }
 
@@ -43,9 +47,11 @@ h1 {
   color: white;
   margin: 0;
 }
+
 h1 strong {
   color: var(--celeste);
 }
+
 h2 {
   color: var(--celeste);
   text-transform: uppercase;
@@ -56,19 +62,41 @@ h2 {
 
 
 .hero {
-  height: 100%;
+  height: auto;
   background-color: var(--background-gris);
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+  position: relative;
 }
-.hero-image{
+
+.hero-image {
   object-fit: cover;
-  padding: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-inmage__container {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   width: 100%;
 }
 
+.hero__titulo {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.438);
+  width: 100%;
+}
+
+.hero__titulo h1 {
+  letter-spacing: 0.07em;
+  padding: 0.5em;
+}
 
 .portfolio {
   background: #fafafa;
@@ -88,6 +116,7 @@ h2 {
   flex-wrap: wrap;
   width: 100%;
 }
+
 .project strong {
   font-family: 'Fjalla One', sans-serif;
 }
@@ -97,8 +126,9 @@ h2 {
 .project-url {
   margin: 1rem 0;
 }
+
 .project-description {
-  font-size:1em;
+  font-size: 1em;
 }
 
 
@@ -111,11 +141,11 @@ h2 {
 .project-details {
   width: 100%;
   text-align: justify;
-  font-size:1em;
+  font-size: 1em;
 }
 
-.project-image{
-  width: 100%;  
+.project-image {
+  width: 100%;
   text-align: center;
   /* padding: 5rem; */
 }
@@ -149,17 +179,20 @@ figure {
   height: inherit;
   width: 100%;
 }
+
 .header ol {
   display: flex;
   height: inherit;
   flex-direction: column;
   width: 100%;
 }
+
 .header ol li {
   height: inherit;
   text-align: center;
   width: 100%;
 }
+
 .header a {
   display: flex;
   align-items: center;
@@ -204,12 +237,12 @@ figure {
   color: white;
 }
 
-.footer .description{
+.footer .description {
   text-align: center;
   width: 100%;
 }
 
-.copyright{
+.copyright {
   width: 100%;
   text-align: center;
 }
@@ -221,10 +254,12 @@ figure {
   align-items: center;
   justify-content: space-around;
 }
+
 .event-list-title {
   margin-left: 20px;
 }
-.event { 
+
+.event {
   margin: 1rem;
   width: 100%;
   flex-shrink: 0;
@@ -232,11 +267,13 @@ figure {
   overflow: hidden;
   background: #f4fbff;
 }
+
 .event img {
   width: 100%;
   height: 20rem;
   object-fit: cover;
 }
+
 .event-detail {
   margin: 2rem 4rem;
   margin-top: -4rem;
@@ -246,14 +283,15 @@ figure {
   text-align: center;
   font-size: 1em;
 }
+
 .event-description {
   text-align: left;
   font-size: 1em;
-  margin-bottom:3rem;
+  margin-bottom: 3rem;
 }
 
 .event-url {
-  color:var(--celeste);
+  color: var(--celeste);
   border: 0.1rem solid;
   padding: 0.5rem 2rem;
   text-decoration: none;
@@ -291,17 +329,20 @@ figure {
 .social-link.twitter {
   background-image: url('../images/twitter.svg');
 }
+
 .social-link.facebook {
   background-image: url('../images/facebook.svg');
 }
+
 .social-link.github {
   background-image: url('../images/github.svg');
 }
+
 .social-link.instagram {
   background-image: url('../images/instagram.svg');
 }
 
-.form-email{
+.form-email {
   margin-bottom: 3rem;
   width: 100%;
 }
@@ -332,7 +373,7 @@ figure {
   display: inline-block;
 }
 
-.form-email h3 { 
+.form-email h3 {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
