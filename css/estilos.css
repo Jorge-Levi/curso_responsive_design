@@ -274,6 +274,10 @@ figure {
   object-fit: cover;
 }
 
+.event-video{
+  width: 100%;
+}
+
 .event-detail {
   margin: 2rem 4rem;
   margin-top: -4rem;
