@@ -182,14 +182,28 @@ figure {
 
 .menu {
   height: inherit;
-  width: 100%;
+  width: 100vw;
+  /* height: 100vh; */
+  position: fixed;
+  background-color: #00000081;
+  z-index: 99;
+  top: 0;
+  bottom: 0;
+  transition: 3ms;
+  left: -100vw;
+}
+
+.menu.is-active{
+  left: 0                   ;
 }
 
 .header ol {
   display: flex;
-  height: inherit;
+  height: 100%;
   flex-direction: column;
   width: 100%;
+  align-items: center;
+  margin-top: 5rem;
 }
 
 .header ol li {
@@ -206,7 +220,9 @@ figure {
   justify-content: center;
   color: white;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-decoration: underline;
 }
 
 .flexbox {
