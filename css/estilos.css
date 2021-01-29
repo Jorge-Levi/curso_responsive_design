@@ -189,7 +189,7 @@ figure {
   z-index: 99;
   top: 0;
   bottom: 0;
-  transition: 3ms;
+  transition: 0.5s;
   left: -100vw;
 }
 
