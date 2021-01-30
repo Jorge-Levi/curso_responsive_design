@@ -1,8 +1,16 @@
 let menu = document.getElementById('icon-menu');
 let nav = document.getElementById('menu');
+const matchMedia = window.matchMedia('screen and(max-width:767px)');
 
-menu.addEventListener('click', hideShow);
+matchMedia.addListener(screenTest);
+function screenTest(event) {
+    if(event.matches){
+        menu.addEventListener('click', hideShow);
+    }else{
+        menu.removeEventListener('click',hideShow);
+    }
+}
 
-function hideShow(){
+function hideShow() {
     nav.classList.toggle('is-active');
 }
