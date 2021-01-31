@@ -11,6 +11,10 @@ function screenTest(event) {
     }
 }
 
+if(matchMedia){
+    menu.addEventListener('click', hideShow);
+}
+
 function hideShow() {
     nav.classList.toggle('is-active');
 }
